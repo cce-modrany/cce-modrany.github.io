@@ -67,7 +67,7 @@ body {
   overflow-x: hidden;
 
 /* OPRAVA PRO MOBILY: Přidáme 20px (1.2rem) mezeru zleva i zprava pro celý web */
-    padding: 1.5rem 1.2rem; /* 1.5rem je horní/dolní, 1.2rem je levý/pravý vnitřní okraj */
+    padding: 1.2rem 1.2rem; /* 1.5rem je horní/dolní, 1.2rem je levý/pravý vnitřní okraj */
 }
 
 footer,
