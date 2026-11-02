@@ -1,0 +1,8 @@
+# Ignoruj všechny fotky s příponou .jpg v celém projektu
+*.jpg
+*.jpeg
+
+# Ignoruj celou složku (např. pracovní složku se starými věcmi)
+ignoruj/
+
+
