@@ -20,10 +20,10 @@
   --justify-important: center;
   --justify-normal: left;
   --line-height: 1.5;
-  --width-card: 250px;
+  --width-card: 240px;
   --width-card-medium: 400px;
-  --width-card-wide: 850px;
-  --width-content: 950px;
+  --width-card-wide: 800px;
+  --width-content: 920px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,8 +67,10 @@ body {
   overflow-x: hidden;
 
 /* OPRAVA PRO MOBILY: Přidáme 20px (1.2rem) mezeru zleva i zprava pro celý web */
-    padding: 1.2rem 1.2rem; /* 1.5rem je horní/dolní, 1.2rem je levý/pravý vnitřní okraj */
+    padding: 1.15rem 1.15rem; /* 1.5rem je horní/dolní, 1.2rem je levý/pravý vnitřní okraj */
 }
+
+
 
 footer,
 header,
@@ -82,7 +84,7 @@ hr {
   background-color: var(--color-bg-secondary);
   border: none;
   height: 1px;
-  margin: 4rem 0;
+  margin: 2rem 0;
   width: 100%;
 }
 
@@ -91,6 +93,16 @@ section {
   flex-wrap: wrap;
   justify-content: var(--justify-important);
 }
+
+/*Pokus o užší sekci pro některé stránky */
+
+section-narrow {
+    max-width: 680px !important; /* Vynutí užší šířku (600px) bez ohledu na to, co říká MVP.css */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;    /* Vypne flexboxový chaos z MVP.css a udělá z toho klasický blok */
+}
+
 
 section img,
 article img {
